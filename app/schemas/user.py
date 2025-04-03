@@ -1,11 +1,10 @@
 from fastapi import HTTPException
-from pydantic import BaseModel, field_validator  # Importe field_validator
-
+from pydantic import BaseModel, field_validator
 class UserCreate(BaseModel):
     name: str
     email: str
 
-    @field_validator("email")  # Substitua @validator por @field_validator
+    @field_validator("email")
     @classmethod  # Adicione o decorador @classmethod
     def validate_email(cls, value):
         try:

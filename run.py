@@ -9,7 +9,7 @@ log_config["formatters"]["access"]["fmt"] = "%(asctime)s - %(levelname)s - %(mes
 
 config_kwargs = {
     "app": app,
-    "host": "192.168.0.9",
+    "host": "192.168.0.10",
     "port": 8080,
     "log_level": "info",
     "reload": True,
